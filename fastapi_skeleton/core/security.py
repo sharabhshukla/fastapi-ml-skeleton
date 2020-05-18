@@ -13,6 +13,7 @@ from fastapi_skeleton.core.messages import AUTH_REQ, NO_API_KEY
 api_key = APIKeyHeader(name="token", auto_error=False)
 
 
+
 def validate_request(header: Optional[str] = Security(api_key)) -> bool:
     authentication_status = False
     if header is None:

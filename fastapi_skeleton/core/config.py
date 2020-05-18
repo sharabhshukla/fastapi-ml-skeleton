@@ -11,5 +11,6 @@ config = Config(".env")
 
 API_KEY: Secret = config("API_KEY", cast=Secret)
 IS_DEBUG: bool = config("IS_DEBUG", cast=bool, default=False)
+API_KEY_AUTH: bool = config("API_KEY_AUTH", cast=bool, default=True)
 
 DEFAULT_MODEL_PATH: str = config("DEFAULT_MODEL_PATH")

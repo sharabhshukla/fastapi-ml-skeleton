@@ -1,0 +1,4 @@
+IS_DEBUG = False
+API_KEY_AUTH = True
+API_KEY = FILL_YOUR_KEY_HERE #Multiple keys should be seperated by commas (,)
+DEFAULT_MODEL_PATH=./sample_model/lin_reg_california_housing_model.joblib
